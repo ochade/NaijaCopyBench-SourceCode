@@ -1,0 +1,11 @@
+__pycache__/
+*.py[cod]
+.venv/
+.ipynb_checkpoints/
+data/act/pages/
+models/
+*.safetensors
+*.bin
+.env
+*.key
+Thumbs.db
