@@ -17,3 +17,11 @@ derived artifacts (data/act/clean/, data/derived/), never in this raw source.
 Verify integrity at any time with:
   Get-FileHash data\act\raw\CopyrightAct2022.txt -Algorithm SHA256
 Expected: 11A195164E989FE6A3EA745DD4BA5B7615AEE4050213257768432D4C2F39D52E
+
+## Scan (verification source for numerals gate)
+- File: data/act/pages/Copyright-Act-2022.pdf
+- Format: PDF v1.7, 68 pages (embedded page scans)
+- Size: 855272 bytes
+- SHA-256: 78CC1821D5C0189F5E5567344B40B871AFE2E513D073D143E2DA8709690FFA6B
+- Page mapping: PDF page N != gazette printed page (A-xxx). Record both in numerals_log.
+- Verified so far: s.19(1)(a)-(e) and s.19(2) durations confirmed against PDF p.13 (gazette A-189/A-190). 70yr literary/artistic, 50yr sound recording/broadcast/audiovisual — matches OCR text.
