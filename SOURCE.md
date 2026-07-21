@@ -25,3 +25,4 @@ Expected: 11A195164E989FE6A3EA745DD4BA5B7615AEE4050213257768432D4C2F39D52E
 - SHA-256: 78CC1821D5C0189F5E5567344B40B871AFE2E513D073D143E2DA8709690FFA6B
 - Page mapping: PDF page N != gazette printed page (A-xxx). Record both in numerals_log.
 - Verified so far: s.19(1)(a)-(e) and s.19(2) durations confirmed against PDF p.13 (gazette A-189/A-190). 70yr literary/artistic, 50yr sound recording/broadcast/audiovisual — matches OCR text.
+- Page mapping: section_map.json 'page' field = scan page = PDF page (verified: s.19 -> 13). No offset.

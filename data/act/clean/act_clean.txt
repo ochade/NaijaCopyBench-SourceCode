@@ -163,7 +163,7 @@ SCHEDULE
 
 ===== [PAGE 7 of source scan] =====
 
-Commencement.
+Commencement.
 COPYRIGHT ACT, 2022
 ACT No. 8
 AN ACT TO REPEAL THE COPYRIGHT ACT, CAP C28, LAWS OF THE FEDERATION OF NIGERIA,
@@ -455,8 +455,8 @@ recordings.
 ===== [PAGE 13 of source scan] =====
 
 16.—(1) Where the owner of the copyright in a literary, musical or
-artistic work, authorises a person to incorporate the work in an audiovisual work and a broadcasting organisation broadcasts the audio-visual
-work with the authorisation of the owner of the copyright in the audiovisual work, the owner of the copyright in the literary, musical or artistic
+artistic work, authorises a person to incorporate the work in an audio-visual work and a broadcasting organisation broadcasts the audio-visual
+work with the authorisation of the owner of the copyright in the audio-visual work, the owner of the copyright in the literary, musical or artistic
 work incorporated in the audio-visual work, shall, in the absence of any
 express agreement to the contrary between the owner of the underlying
 work and the owner of the audio-visual work, be deemed to have authorised
@@ -492,12 +492,12 @@ within that time ;
 Broadcasting
 of works
 incorporated
-in an audiovisual work.
+in an audio-visual work.
 Right to
 share in
 proceeds
 of sale.
-Commencements of
+Commencements of
 rights.
 Duration of
 copyright.
@@ -900,7 +900,7 @@ copyright.
 (5) An assignment or licence granted by one copyright owner, shall
 have effect as if granted by his co-owner and subject to any agreement between
 them, any fee received shall be divided equitably among the co-owners.
-(6) For the purposes of this section, persons shall be deemed to be coowners, if they —
+(6) For the purposes of this section, persons shall be deemed to be co-owners, if they —
 (a) share joint interest in the whole or any part of a copyright ; or
 (b) have interests in the copyright in various works comprised in a
 production of two or more works.
@@ -1461,7 +1461,7 @@ least N100,000 or imprisonment for a term of at least one year or both.
 on written demand, be furnished with information relating to the work as
 contained in the record kept under this section.
 49.—(1) The Commission shall have powers, with the consent of the
-Minister, to prescribe any design, label, mark, impression or any other antipiracy device for use on, in, or in connection with any work in which copyright
+Minister, to prescribe any design, label, mark, impression or any other anti-piracy device for use on, in, or in connection with any work in which copyright
 subsists.
 Duty to
 keep
@@ -1684,7 +1684,7 @@ in accordance with the provisions of this Act.
 undertake to any person, agency or official likely to suffer any damage or loss
 that may result from any action taken in respect of the notice, where it is
 found that the notice ought not to have been given.
-(10) Without prejudice to subsections (1) and (2), the ComptrollerGeneral of Customs, or any other officer in charge of a border may, in respect
+(10) Without prejudice to subsections (1) and (2), the Comptroller-General of Customs, or any other officer in charge of a border may, in respect
 of any imported goods, which he reasonably believes to be infringing copyright,
 suspend the release of such goods and promptly notify the importer and the
 right owner of the work.
@@ -1766,7 +1766,7 @@ challenge is pending under subsection (2), shall suspend the account for a
 period of not less than one month.
 (2) A subscriber who receives a warning notice may challenge the
 notice on the grounds of mistake or misidentification —
-(a) within 10 days from the date of the warning, send a signed counternotice to the service provider, furnishing his full contact details and the
+(a) within 10 days from the date of the warning, send a signed counter-notice to the service provider, furnishing his full contact details and the
 factual basis of his belief that his account has been misidentified or that the
 use of the content was not infringing ; or
 (b) If the basis for the challenge under paragraph (a) cannot be resolved
@@ -1786,7 +1786,7 @@ suspension
 of accounts
 of repeat
 infringers.
-Misrepresentation.
+Misrepresentation.
 
 ===== [PAGE 42 of source scan] =====
 
@@ -2331,12 +2331,12 @@ contrivance, material, equipment used or suspected to be used in committing
 an offence under this Act ;
 Appointment
 of the
-DirectorGeneral and
+Director-General and
 other staff of
 the
 Commission.
 Removal of
-the DirectorGeneral,
+the Director-General,
 Chairman
 and other
 members of
