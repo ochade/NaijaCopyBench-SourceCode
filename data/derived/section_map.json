@@ -422,6 +422,7 @@
     "subsections": [
       "1",
       "2",
+      "3",
       "4",
       "5",
       "6"
@@ -476,7 +477,8 @@
       "7",
       "8",
       "9",
-      "10"
+      "10",
+      "11"
     ],
     "paragraph_letters": [
       "a",
@@ -1052,6 +1054,7 @@
     "number": 64,
     "title": "Protected performance",
     "subsections": [
+      "1",
       "2"
     ],
     "paragraph_letters": [
@@ -1411,9 +1414,12 @@
     "subsections": [
       "1",
       "2",
+      "3",
       "4",
+      "5",
       "6",
       "7",
+      "8",
       "9"
     ],
     "paragraph_letters": [
@@ -1432,6 +1438,7 @@
     "title": "Levy on copyright material",
     "subsections": [
       "1",
+      "2",
       "3",
       "4",
       "5"
@@ -1677,6 +1684,7 @@
       "5",
       "6",
       "7",
+      "8",
       "9",
       "10",
       "11"

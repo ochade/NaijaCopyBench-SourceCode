@@ -64,11 +64,11 @@ for k, (idx, n) in enumerate(ordered):
     seg = lines[idx:bounds[k+1]]
     seg = strip_marginalia(seg)
     body = "\n".join(seg).strip()
-    subs = set(re.findall(r"(?m)^\((\d{1,2})\)", body))
-    if re.match(r"^\d{1,3}\.\u2014\(1\)", body):
+    subs = set(re.findall(r"(?m)^\s*\((\d{1,2})\)", body))
+    if re.match(r"^\d{1,3}\.\s*[\u2014\u2013-]?\s*\(1\)", body):
         subs.add("1")
     subs = sorted(subs, key=int)
-    para_letters = sorted(set(re.findall(r"(?m)^\(([a-z])\)", body)))
+    para_letters = sorted(set(re.findall(r"(?m)^\s*\(([a-z])\)", body)))
     section_map[str(n)] = {
         "number": n, "title": titles.get(n, "?"),
         "subsections": subs, "paragraph_letters": para_letters,

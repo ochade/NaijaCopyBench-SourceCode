@@ -26,3 +26,4 @@ Expected: 11A195164E989FE6A3EA745DD4BA5B7615AEE4050213257768432D4C2F39D52E
 - Page mapping: PDF page N != gazette printed page (A-xxx). Record both in numerals_log.
 - Verified so far: s.19(1)(a)-(e) and s.19(2) durations confirmed against PDF p.13 (gazette A-189/A-190). 70yr literary/artistic, 50yr sound recording/broadcast/audiovisual — matches OCR text.
 - Page mapping: section_map.json 'page' field = scan page = PDF page (verified: s.19 -> 13). No offset.
+- Held but NOT integrated (Phase 2 decision): Collective Management Regulations 2025 (31pp, image-only scan), Copyright (Levy) Order 2026 (8pp, image-only scan). Subsidiary legislation under s.88(6)(c)/s.97 and s.89. Evidence for the regulation-making-power finding; candidate second authority layer for future work.
