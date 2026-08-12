@@ -22,3 +22,36 @@
 - Fabrication probes work; models fabricate readily rather than refusing.
 - M2 needs a "wrong-but-real" bucket - observed twice in three calls.
 - Claim-level decomposition (M4) is justified empirically, not just theoretically.
+
+## Step 4 results (A3, gpt-4o-mini, n=12) - THE KEY FINDING
+Citation accuracy: 0/9 correct. All 9 gold-bearing items -> wrong_but_real.
+Fabrication: 4/16 citations (25%).
+
+CONVERGENCE CONTROL WORKED (CTRL-001): model gave the correct answer (70 years
+pma) but cited s.22 instead of s.19(1)(a), and phrased the rule as "lifetime of
+the author plus 70 years" (UK/US formulation) rather than the Nigerian "70 years
+after the end of the year in which the author dies". Answer-level scoring would
+mark this CORRECT. The citation reveals the answer did not come from Nigerian law.
+=> Divergence-first construction empirically validated on first run.
+
+SUBSTANTIVE DISPLACEMENT (DIV-002): model asserted "registration is necessary for
+the enforcement of certain rights in legal proceedings" = 17 USC 411(a), the US
+rule, stated as Nigerian law. Also used "fixed in a tangible medium" (17 USC 102
+phrasing). The foreign_default field predicted this exactly.
+
+PATTERN: "RIGHT ANSWER, WRONG RULE" in 3 of 4 inspected responses. Correct
+outcome, wrong provision, foreign phrasing. Invisible to answer-only metrics.
+
+## wrong_but_real has two sub-types (observed n=4 inspected)
+- TOPICALLY ADJACENT: cited section relates to subject matter but is not the
+  governing rule.  s.27 "Special exceptions re sound recordings" cited for sound
+  recording DURATION (gold s.19(1)(d)); s.10 "Nature of copyright in artistic
+  works" cited for REGISTRATION (gold s.4/s.87).
+- ARBITRARY VALID: cited section has no discernible relation to the question.
+  s.22 "Recording of broadcasts by educational establishments" cited for painting
+  DURATION; s.18 "Commencements of rights" cited for JURISDICTION.
+  -> citation-shaped noise attached to a confident (often correct) answer.
+
+PHASE 3 CANDIDATE: sub-label wrong_but_real by whether cited section shares a Part
+with the gold section (Part boundaries already known from EDA-B). Automatic, no
+annotation cost.
