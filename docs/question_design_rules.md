@@ -99,3 +99,19 @@ Before sending a batch to annotators, confirm:
   [ ] multi-hop items map to a real xrefs edge (rule 14)
   [ ] no real persons or live disputes (rule 15)
   [ ] internal file (expected provisions) separated from the annotator sheet
+
+## Rule 19 - NO MISSING FACTS (added after Batch C review)
+Every fact the answer turns on must be stated in the question. If the governing
+provision imposes conditions, the scenario must supply enough detail to resolve
+each one, or the correct answer becomes "it depends" and annotators will fill the
+gap differently - which lowers agreement for reasons unrelated to legal
+disagreement.
+
+TEST: read the provision, list its conditions, check the question resolves each.
+
+FAILS: "A partner organisation in Ghana wants copies. May we send them?"
+       (s.26(5) requires the recipient be an AUTHORISED ENTITY - not stated)
+PASSES: "A registered non-profit in Ghana serving blind readers wants copies..."
+
+Exception: questions that ASK FOR the conditions ("what must I do to avoid
+liability?") are fine - they are requirement questions, not application questions.

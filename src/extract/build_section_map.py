@@ -68,7 +68,7 @@ for k, (idx, n) in enumerate(ordered):
     if re.match(r"^\d{1,3}\.\s*[\u2014\u2013-]?\s*\(1\)", body):
         subs.add("1")
     subs = sorted(subs, key=int)
-    para_letters = sorted(set(re.findall(r"(?m)^\s*\(([a-z])\)", body)))
+    para_letters = sorted(set(re.findall(r"(?m)^\s*\(\s*([a-z])\s*\)", body)))
     section_map[str(n)] = {
         "number": n, "title": titles.get(n, "?"),
         "subsections": subs, "paragraph_letters": para_letters,
