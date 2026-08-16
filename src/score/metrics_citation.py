@@ -17,10 +17,10 @@ SECS = {k: v for k, v in MAP.items() if k != "SCHEDULE"}
 # Formats observed from gpt-4o-mini: "Section 114", "Section 27(1)", "Section 10"
 # Also handle: s.19, S. 19, section 19(1)(d), sections 9-13
 CITE = re.compile(
-    r"(?:[Ss]ections?|[Ss]\.|[Ss]ec\.)\s*"
+    r"(?:\b[Ss]ections?\s+|(?<![A-Za-z])[Ss]\.\s?|(?<![A-Za-z])[Ss]ec\.\s?)"
     r"(\d{1,3})"                      # section number
-    r"(?:\s*\((\d{1,2})\))?"          # optional subsection (1)
-    r"(?:\s*\(([a-z])\))?"            # optional paragraph (a)
+    r"(?:\s?\((\d{1,2})\))?"          # optional subsection (1)
+    r"(?:\s?\(([a-z])\))?"            # optional paragraph (a)
 )
 
 def extract_citations(text):
