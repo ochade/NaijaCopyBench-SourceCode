@@ -120,3 +120,28 @@ Q: "Do I need to register my book to have copyright?"  (gold s.4 + s.87(3))
    top-5, but ranked below or beside distractors.
 => PREDICTION for A5: retrieval helps but does not solve. Confirms the framework
    rejection "retrieval relevance is not correctness" (CerdasHukum) empirically.
+
+## Step 6 result: A5 (gpt-4o-mini + RAG, top-5) vs A3, A1  (n=12)
+                        A1(3B)   A3(4o-mini)  A5(+RAG)
+correct citations        0/9        0/9         1/9
+correct (any grain)      0/9        0/9         3/9
+fabrication rate        44.4%      25.0%        7.1%
+gold chunk retrieved      -          -          3/9
+
+PERFECT SPLIT: all 3 items where the gold chunk was retrieved scored correct or
+correct-coarse; all 6 where it was not scored wrong_but_real. On this evidence
+the bottleneck is RETRIEVAL, not reasoning. (n=9 - suggestive, not conclusive.)
+
+FABRICATION COLLAPSED 25% -> 7.1%. Supplying real statutory text stops the model
+inventing sections even when the retrieved text is the WRONG text. Fabrication
+suppression is separable from accuracy improvement.
+
+RETRIEVAL IS THE WEAK LINK: 3/9 gold recall at top-5. Cause: the sanity queries
+were clean legal questions and retrieved well; the eval items are creator-register
+scenarios ("I recorded an album in Lagos in 2015...") whose narrative framing
+dilutes the embedding. The ILSIC register gap degrades the RETRIEVER, not just
+the model - a direct consequence of the deliberate choice to write realistic
+questions.
+
+Attractor chunks: s6, s32, s36, s77 recur across unrelated queries - candidates
+for generic-text crowding.
