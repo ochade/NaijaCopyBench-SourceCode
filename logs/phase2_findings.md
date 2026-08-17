@@ -145,3 +145,51 @@ questions.
 
 Attractor chunks: s6, s32, s36, s77 recur across unrelated queries - candidates
 for generic-text crowding.
+
+## Retrieval diagnostic: index is fine, the corpus is too homogeneous for dense-only
+TEST 1 (sanity): query the index with s.19's OWN text -> s.19 ranks 1st at 1.000,
+next best 0.798. Index, chunk and embedding are all correct.
+
+TEST 2 (the failure): query "what is the term of copyright in a literary work?"
+  score spread over all 272 chunks: max 0.765, min 0.380, mean 0.578, std 0.072
+  s.19 ("Duration of copyright ... 70 years after the end of the year in which
+  the author dies") ranks 45/272, score 0.656, 0.109 below the top hit.
+
+=> NOT a corpus-size problem (272 chunks; top-15 = 5.5% of everything).
+=> NOT an index problem (Test 1 is exact).
+=> IT IS CORPUS HOMOGENEITY. Every chunk is Nigerian copyright law; EDA-B measured
+   only 1,987 distinct word types (Herdan's C 0.760). A general-purpose embedder
+   cannot separate "the provision that ANSWERS this" from "another provision ABOUT
+   copyright". 44 chunks look more like the question than the one that answers it.
+   Matches LexPath: "textually similar but legally inapplicable".
+
+=> WHY BM25 SHOULD HELP: idf downweights "copyright" (near-universal in this corpus)
+   and upweights rare discriminative terms - "duration", "70 years", "author dies",
+   "Federal High Court". This is precisely inverted from what cosine similarity did.
+
+## SAR (Structure-Aware Reranking) tested: DEGRADES recall (3/9 -> 2/9)
+Implemented after Beyond Case Law (arXiv 2604.06173), formula
+B(n) = (1/L(n)) * sum_s I(s->n) * S_dense(s)/L(s), alpha=0.5, seed_k=10.
+Graph = xrefs.json: 60 edges, only 36 of 109 sections cite anything.
+
+TWO FAILURE MODES OBSERVED:
+1. CHUNK-LEVEL FLOODING. s.31 is split into 6 chunks; a single graph edge to s.31
+   gave all six the same bonus (0.4696), flooding the top-5 and evicting the
+   correct answer on MH-002. The paper's corpus is one document per article, so
+   section-level bonuses cannot multiply across chunks there.
+2. WRONG EDGE DIRECTION FOR OUR QUESTIONS. SAR propagates OUTWARD from seeds.
+   Our graph has 19->7, so s.19 can only help once it is already retrieved -
+   which is the thing that fails. Nothing in the top-10 cites s.19 (low in-degree),
+   so no bonus reaches it.
+
+=> SAR requires a DENSE citation graph with delegation chains pointing toward the
+   answer. A 109-section Act with 60 edges does not provide one. This is a
+   scale/structure dependency of the technique, not a defect in the implementation.
+
+CONFIGURATIONS TESTED (gold recall@5, n=9):
+  dense-only @5      3/9
+  dense-only @15     4/9
+  hybrid BM25+RRF    3/9   (RRF also degraded recall in the source paper, Table 4)
+  SAR                2/9
+DECISION: use plain dense retrieval for the RAG arm. Report retrieval recall as a
+stated bound. Four configurations tested; retrieval optimisation is out of scope.
