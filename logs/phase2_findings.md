@@ -293,3 +293,31 @@ CAVEAT: the system prompt instructs the model to "cite the specific section",
 which INDUCES citation. Measured mis-citation and fabrication rates are partly a
 product of that instruction - a stated design choice for a citation-focused
 benchmark, not a neutral observation.
+
+## The three-layer dissociation (A3, verified on SH-001 and SH-002)
+SH-001 "which court?"     -> "Federal High Court" CORRECT | cited s.18 (Commencement) WRONG
+SH-002 "literary term?"   -> "70 years after death" CORRECT | cited s.9(1) - s.9 has NO
+                             subsections, so this is a FABRICATED subsection on a WRONG section
+                          -> phrased as "lifetime of the author plus 70 years" = the US/UK
+                             formulation, not Nigeria's "70 years after the END OF THE YEAR
+                             in which the author dies"
+
+LAYER            STATE
+outcome          correct
+formulation      foreign (US/UK phrasing)
+citation         fabricated / wrong section
+
+Answer-level scoring sees only layer 1 and marks these CORRECT. M2 catches layer 3.
+Layer 2 is what the convergence-control category and M3's both_present verdict expose.
+
+INTERPRETATION: the models have absorbed the SUBSTANCE of Nigerian copyright rules
+(present in secondary sources - summaries, briefings, commentary) but not the
+STRUCTURE (which requires the statute itself in the training corpus). They then
+generate plausible section numbers to satisfy the citation instruction.
+This is a harder failure to detect than a wrong answer: the user gets the right
+rule with a citation that will waste their time.
+
+CAVEAT: the system prompt instructs the model to "cite the specific section",
+which INDUCES citation. Measured mis-citation and fabrication rates are partly a
+product of that instruction - a stated design choice for a citation-focused
+benchmark, not a neutral observation.
