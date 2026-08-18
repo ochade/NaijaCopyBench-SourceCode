@@ -193,3 +193,42 @@ CONFIGURATIONS TESTED (gold recall@5, n=9):
   SAR                2/9
 DECISION: use plain dense retrieval for the RAG arm. Report retrieval recall as a
 stated bound. Four configurations tested; retrieval optimisation is out of scope.
+
+## foreign_default sourcing complete: 45/45
+Sources: US Title 17 (Circular 92, Dec 2025); UK CDPA 1988 (revised to 03/08/2026).
+Both read in full for the relevant provisions. Null results (folklore in 17 USC;
+levy in CDPA) verified by search of the primary texts, not asserted.
+
+### What sourcing changed
+1. STRONGEST DIVERGENCE FOUND (C-006). 17 USC 512(m)(1) expressly disclaims a
+   monitoring duty; Nigeria s.55(3) imposes one. The statutes take OPPOSITE
+   positions on stay-down. Only visible by reading the text.
+2. UK CONVERGENCE ON EXCEPTIONS. Nigeria s.23(4) and UK CDPA s.36(7) are
+   near-identical (void licence terms); likewise s.23(3)/s.36(6) and s.24(1)/
+   s.36(8). Three items were mislabelled as divergence. Nigeria's exceptions
+   regime is modelled on the UK.
+3. CORRECTION. My earlier claim of "no US orphan works exception" was wrong:
+   17 USC 108(e) is a narrow analogue with an AVAILABILITY trigger (copy cannot
+   be obtained at a fair price) rather than an untraceable-OWNER trigger.
+4. C-002 REWRITTEN. The oath requirement is not a divergence - 512(c)(3)(A)(vi)
+   requires a penalty-of-perjury statement. Rewritten to target WHAT is sworn:
+   the US swears AUTHORITY TO ACT (vi) and leaves the good-faith belief unsworn
+   (v); Nigeria s.54(2)(e) swears the BELIEF and leaves authority unsworn.
+5. C-015 CONFIRMED NO-ANALOGUE AGAINST BOTH. 512(j) requires a court; CDPA s.97A
+   gives the power to the High Court. Nigeria s.61 empowers the Commission to
+   block directly. Both comparators agree with each other and differ from Nigeria.
+
+### METHODOLOGICAL FINDING (Ch.5)
+Divergence is JURISDICTION-RELATIVE. In a common-law jurisdiction with colonial
+inheritance, displacement toward the UK is far harder to detect than displacement
+toward the US, because the UK rule is frequently ALSO the Nigerian rule. An item
+can be divergent from one comparator and convergent with the other. Convergence-
+control logic must therefore be applied PER COMPARATOR, not globally - otherwise
+an item silently becomes a convergence point for the very jurisdiction the model
+is most likely to import from.
+
+### PROCESS NOTE
+Two regex-based patches silently wrote content into the wrong item slot, and a
+third stripped a trailing comma and broke the file. A "44/45 sourced" count
+looked like near-success while one entry held another item's text. Counts do not
+validate contents. Remaining edits to these files should be made by hand.
