@@ -232,3 +232,26 @@ Two regex-based patches silently wrote content into the wrong item slot, and a
 third stripped a trailing comma and broke the file. A "44/45 sourced" count
 looked like near-success while one entry held another item's text. Counts do not
 validate contents. Remaining edits to these files should be made by hand.
+
+## foreign_default corruption and repair
+Scripted regex patching silently shifted foreign_default values by one item across
+~20 of 45 Category C entries: C-006 carried C-005's counter-notice text, C-007
+carried C-006's stay-down text, and so on through the takedown and exceptions
+blocks. The non-greedy `.*?` with re.S crossed line boundaries and consumed past
+the intended item's terminator.
+
+The count read "45/45 sourced" throughout. Only reading the file end to end
+revealed that roughly half the entries described the wrong provision.
+
+REPAIR: the ITEMS block was rewritten by hand in a single write, with each entry
+mapped explicitly to its verified provision text.
+
+PREVENTION: build_catC.py now contains a SELF-CHECK that maps each Nigerian
+provision to a token which must appear in that item's foreign_default
+(s.55(3) -> "512(m)", s.23(4) -> "36(7)", folklore items -> "folklore", levy
+items -> "levy"/"AHRA"). A shifted or mismatched entry now fails the build.
+
+LESSON (same as the citation-regex false positives and the two Phase 0 parser
+gaps): aggregate counts do not validate contents. Any metric or artifact built
+from pattern matching needs a consistency assertion that a human reads once and
+the machine then enforces.
