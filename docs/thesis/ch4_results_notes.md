@@ -75,3 +75,28 @@ BY CATEGORY, notable:
      questions that do not invite fabrication. Wide interval (n=20). Consistent
      with the pilot pattern of correct answers carrying invented citations;
      confirmation requires gold provisions.
+
+## M1 fabrication with 95% bootstrap CIs (item-level resampling, B=10000)
+  A1  34.6%  [26.9, 42.3]
+  A3  25.9%  [19.7, 32.4]
+  A5  12.5%  [ 8.3, 17.0]
+
+PAIRWISE DIFFERENCES (percentage points)
+  A1 - A3   +8.7  [-1.3, 18.6]   INCLUDES ZERO - no reliable difference
+  A1 - A5  +22.1  [13.2, 31.0]   excludes zero
+  A3 - A5  +13.4  [ 6.0, 21.1]   excludes zero
+
+=> Retrieval reliably reduces fabrication. Model SCALE does not: at n=180 the
+   3B model cannot be said to fabricate more than the frontier model.
+
+BY CATEGORY, notable:
+  A5 divergence and summarisation: 0.0% [0.0, 0.0] - zero fabricated citations
+     across 65 items. With statutory text supplied the model stops inventing
+     provisions on substantive questions.
+  A5 fabrication probes: 38.0% [25.7, 52.0] - retrieval halves fabrication on
+     probes but does not stop it. Suppression is conditional on the premise
+     being true.
+  A3 control: 46.2% [23.8, 66.7] - highest of any category for that arm, on
+     questions that do not invite fabrication. Wide interval (n=20). Consistent
+     with the pilot pattern of correct answers carrying invented citations;
+     confirmation requires gold provisions.
