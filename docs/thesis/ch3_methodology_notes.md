@@ -49,3 +49,21 @@ Rule: every entry states the DECISION, the REASON, and the EVIDENCE.
   / paragraph / entity).
 - Citation regex tightened after false positives: "s." + line break + list number
   was parsed as a citation, inflating valid counts and deflating fabrication rate.
+
+## Scoring rule: partial citation matches (fixed before scoring, all metrics)
+A citation to the correct SECTION counts as supported even where the gold
+provision specifies a subsection or paragraph. Citing s.19 where the gold is
+s.19(1)(d) is scored as supported.
+
+RATIONALE. The two annotators cited the same provisions at different levels of
+granularity throughout, and no exact string match occurred between them across
+the sixty double-annotated items. Requiring subsection-level precision from a
+model would impose a standard the annotating practitioners did not themselves
+observe.
+
+CONSEQUENCE FOR REPORTING. M2 retains the distinction as a separate verdict
+(correct at section level) so that the stricter figure remains recoverable.
+Both are reported: accuracy at section level and accuracy at full gold
+granularity. The section-level figure is the headline.
+
+This rule is applied identically to every arm and every category.

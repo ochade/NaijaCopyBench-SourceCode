@@ -100,3 +100,70 @@ BY CATEGORY, notable:
      questions that do not invite fabrication. Wide interval (n=20). Consistent
      with the pilot pattern of correct answers carrying invented citations;
      confirmation requires gold provisions.
+
+## M2 citation accuracy, 180 items, three arms (Category E excluded)
+Category E items cite provisions that do not exist and have no governing
+provision, so citation accuracy cannot be assessed on them. They are measured
+by M1 instead. Reported n = 145.
+
+              n    correct  coarse   wrong  no_cite   accuracy
+  A1        145          2       5     127       10       4.8%
+  A3        145          1       4     139        0       3.4%
+  A5        145         51      21      70        2      49.7%
+
+BY CATEGORY (section-level accuracy)
+                        A1       A3       A5
+  single_hop           2.9%     5.7%    31.4%
+  multi_hop           20.0%     0.0%    48.0%
+  divergence           0.0%     0.0%    62.2%
+  control              0.0%     5.0%    40.0%
+  summarization        5.0%    10.0%    65.0%
+
+### Finding 1: base models cannot locate the governing provision
+Seven of 145 for A1, five for A3. The pilot result of 0/9 was not a small-sample
+artefact. Without the statute supplied, neither model identifies the provision
+that governs a Nigerian copyright question at any useful rate.
+
+### Finding 2: divergence is where the failure is absolute
+0.0% for BOTH base models across all 45 divergence items - not a single correct
+citation on the provisions where Nigerian law departs from US and UK law. With
+retrieval the same model reaches 62.2%. This is the sharpest contrast in the
+study and it is what the divergence-first construction was designed to expose.
+
+### Finding 3: retrieval helps least where jurisdictions coincide
+Control category: 0.0% and 5.0% base, 40.0% retrieved - the smallest gain of any
+category. Where Nigerian law matches foreign law the model's parametric answer is
+already plausible, so supplying the statute adds less. A benchmark built only from
+convergent items would have understated retrieval's effect; one built only from
+divergent items would have overstated it.
+
+### Qualitative instance (NCB-B-002, A3)
+Question: government employee authored a training manual, died 2015; from what
+date is the term counted? Gold: s.19(1)(b) via s.28(2), 50 years.
+A3 answered: "the copyright in a work created by an employee ... lasts for the
+life of the author plus 70 years after their death ... According to Section 22(1)"
+and computed an expiry of 2085.
+  - wrong rule (life+70 rather than 50 years for government works)
+  - foreign FORMULATION ("life of the author plus 70" is the UK/US phrasing; the
+    Act says "70 years after the end of the year in which the author dies")
+  - wrong provision (s.22 concerns recording of broadcasts by educational
+    establishments)
+  - delivered with a computed date and no hedging
+All three layers of the dissociation in a single response.
+
+## Methodological defects found while scoring M2
+1. Gold provisions in Category E frequently state a NEGATIVE ("NO SECTION 112").
+   The gold parser read the digits as a citation, so a model fabricating s.112
+   scored CORRECT on the item designed to catch that fabrication. Fixed by
+   detecting negation phrasing before parsing.
+2. Gold provisions are frequently MULTI-PROVISION with ranges
+   ("sections 2(1-2), 2(6), 3"). Single-citation matching returned wrong_but_real
+   on every summarisation item, producing a spurious 0.0% for all three arms.
+   Fixed by parsing gold as a set of (section, subsection) pairs with range
+   expansion.
+3. A section-range pattern matched digits INSIDE brackets, so "2(1-2)" was read
+   as sections 1 to 2. Fixed by masking bracketed content before range detection.
+
+These are the same class of defect as the Phase 2 parser gaps: each produced a
+plausible number rather than an error, and each was found only by inspecting
+what the metric actually matched.
