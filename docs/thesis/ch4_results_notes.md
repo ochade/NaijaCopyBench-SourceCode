@@ -167,3 +167,40 @@ All three layers of the dissociation in a single response.
 These are the same class of defect as the Phase 2 parser gaps: each produced a
 plausible number rather than an error, and each was found only by inspecting
 what the metric actually matched.
+
+### Verification: A3's multi-hop citations
+An inspection script displayed A3's cited provisions as blank on most multi-hop
+items, suggesting the model might be withholding citations on questions requiring
+a provision chain. Direct check of M1's extraction on NCB-B-002 returned
+n_citations = 1, section 22 subsection 1, verdict valid - the citation is present
+and correctly extracted. The blank display was a fault in the inspection script,
+not in the metric. A3's 0.0% on multi-hop reflects wrong citations, not absent
+ones. With n = 25 the difference from A1's 20.0% amounts to five items and is
+reported subject to its confidence interval.
+
+## M2 with 95% bootstrap CIs (item-level, B=10000, Category E excluded, n=145)
+  A1   4.8%  [ 1.4,  8.3]
+  A3   3.4%  [ 0.7,  6.9]
+  A5  49.7%  [41.4, 57.9]
+
+PAIRWISE DIFFERENCES
+  A1 - A3   +1.4  [ -3.4,   6.2]  INCLUDES ZERO - base models indistinguishable
+  A1 - A5  -44.8  [-53.1, -35.9]  excludes zero
+  A3 - A5  -46.2  [-54.5, -37.9]  excludes zero
+
+=> Retrieval produces a large, reliably estimated improvement in citation
+   accuracy. Model scale does not: at n=145 the 3B and frontier models cannot be
+   distinguished on this measure.
+
+DIVERGENCE CATEGORY, the strongest result in the study:
+  A1  0.0%  [0.0, 0.0]   n=45
+  A3  0.0%  [0.0, 0.0]   n=45
+  A5 62.2%  [48.9, 75.6]
+A true zero, not a rounded one: no bootstrap resample of the 45 divergence items
+yields a single correct citation from either base model. On the provisions where
+Nigerian law departs from US and UK law, neither model without the statute ever
+identifies the governing section. Supplying the Act raises the same model to
+nearly two-thirds.
+
+A3 also returns a true zero on multi-hop, [0.0, 0.0] at n=25.
+A1's 20.0% on multi-hop is real but imprecise, [4.0, 36.0].
