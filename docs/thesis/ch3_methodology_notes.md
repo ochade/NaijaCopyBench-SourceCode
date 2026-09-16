@@ -67,3 +67,19 @@ Both are reported: accuracy at section level and accuracy at full gold
 granularity. The section-level figure is the headline.
 
 This rule is applied identically to every arm and every category.
+
+## Gold-answer provenance (corrected)
+Category D was reviewed by the adjudicator, who confirmed the annotator's
+provision on all twenty items. The gold values are unchanged; the provenance is
+reviewer-confirmed rather than single-annotator.
+
+  adjudicated (two annotators, resolved by a third)    60
+  reviewer confirmed the annotator                     86
+  reviewer corrected the annotator                     13
+  single annotator, no review                          21
+                                                      ---
+                                                      180
+
+159 of 180 items therefore carry at least a second practitioner's confirmation.
+The remaining 21 are Category F summarisation items, whose gold takes the form of
+required elements rather than a single governing provision.

@@ -204,3 +204,55 @@ nearly two-thirds.
 
 A3 also returns a true zero on multi-hop, [0.0, 0.0] at n=25.
 A1's 20.0% on multi-hop is real but imprecise, [4.0, 36.0].
+
+## H1 outcome: displacement is NOT the dominant failure mode
+Predicted: models substitute US/UK rules on divergence items at a measurable rate.
+Measured: 8-11 instances across 135 arm-items (45 items x 3 arms), of which
+several are false positives on over-broad markers.
+
+WHAT MODELS DO INSTEAD. On divergence items they generate Nigerian-SOUNDING
+answers with fabricated provisions. A3 cited s.36 for the stay-down question,
+s.38 for administrative blocking, s.24(1)(a) for educational photocopying and
+s.6 for folklore - none of which govern those questions. No US or UK doctrine
+appears in the text.
+
+=> The failure is FABRICATION, not DISPLACEMENT, and M1 already measures it.
+=> This is the harder failure to detect: a reader alert to American spelling or
+   DMCA references would find none.
+
+CAVEAT. The system prompt states "Base your answer on the Nigerian Copyright Act
+2022", which names the jurisdiction and may suppress displacement. The
+jurisdiction_cue field permits a test of this, comparing items that name the Act,
+name the country, or supply Nigerian context only.
+
+H1 is reported as NOT SUPPORTED in its original form, with the substituted
+finding stated. A pre-registered hypothesis that fails is a result.
+
+## Cue test: does naming the Act in the system prompt suppress displacement?
+Same model (gpt-4o-mini), same decoding, same 45 divergence items. Only the
+system prompt varied.
+
+  "Base your answer on the Nigerian Copyright Act 2022"   4/45   8.9%
+  "cite the relevant statute" (no jurisdiction named)     7/45  15.6%
+
+Four items displaced under the neutral prompt only, and the substitutions match
+the divergence audit exactly:
+  C-002  "penalty of perjury"  (US 512(c)(3)(A)(vi); Nigeria s.54(2)(e) requires
+         a declaration on oath)
+  C-012  "safe harbor"         (DMCA terminology)
+  C-019  "public domain" + "fair use" on folklore
+  C-023  "public domain" on folk dance
+         (both contradict s.74, which vests authorisation in the Commission and
+         specifies no term)
+One item displaced under the original prompt only (C-031, "fair use").
+
+CAVEATS. Small absolute numbers - a difference interval would span zero. And the
+QUESTIONS still contain "Under Nigerian law", so only the system-prompt cue was
+removed; the item-level cue was held constant. Directional evidence, not a
+demonstrated effect.
+
+CONSEQUENCE FOR H1. The low displacement rate observed in the main run is partly
+an artefact of prompt design. Naming the jurisdiction in the system prompt
+roughly halves observed displacement. A deployment that does not name the
+jurisdiction - which is how an ordinary user would query - should be expected to
+displace more often than this benchmark measures.
