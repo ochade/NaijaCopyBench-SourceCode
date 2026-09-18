@@ -256,3 +256,36 @@ an artefact of prompt design. Naming the jurisdiction in the system prompt
 roughly halves observed displacement. A deployment that does not name the
 jurisdiction - which is how an ordinary user would query - should be expected to
 displace more often than this benchmark measures.
+
+## Held-out probe: A2 memorised rather than generalised
+Ten sections (12, 13, 16, 26, 29, 32, 74, 79, 86, 101) were withheld entirely
+from the fine-tuning set. 21 evaluation items have gold provisions in those
+sections.
+
+              trained (n=123)        held out (n=21)
+  A1           5.7% [ 2.4,  9.8]      0.0% [ 0.0,  0.0]
+  A2          32.5% [24.4, 40.7]      4.8% [ 0.0, 14.3]
+  A3           3.3% [ 0.8,  6.5]      4.8% [ 0.0, 14.3]
+  A5          46.3% [37.4, 55.3]     71.4% [52.4, 90.5]
+
+A2 trained minus held out: +27.8 points [+15.0, +39.0], EXCLUDES ZERO.
+
+INTERPRETATION. A2's headline improvement (4.8% to 28.3% overall) does not
+survive the held-out test. On provisions the adapter never saw it performs at
+4.8%, indistinguishable from the base model's 5.7%. Fine-tuning installed 967
+memorised question-provision mappings; it did not install the statute.
+
+This supports H2's underlying mechanism (Chung et al. 2022; Colombo et al. 2024)
+while refuting its surface prediction. The prediction was that fine-tuning would
+improve citation FORM but not SUBSTANCE. What occurred is that it improved
+substance ONLY within the training distribution, and not at all outside it.
+
+CONTRAST WITH RETRIEVAL. On the same 21 held-out items, A5 scores 71.4% - HIGHER
+than its own trained-section figure of 46.3%. Retrieval is indifferent to whether
+a provision appeared in any training set; it looks the provision up. This is the
+cleanest available statement of the difference between the two interventions:
+fine-tuning memorises what it is shown, retrieval generalises across the corpus.
+
+CAVEAT. 21 held-out items is small and the point estimates are imprecise. The
+DIFFERENCE interval excludes zero by a wide margin, so the direction is secure
+even where the magnitude is not.
