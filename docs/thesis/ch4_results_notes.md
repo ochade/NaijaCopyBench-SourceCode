@@ -345,3 +345,33 @@ A5's accuracy ceiling is set by retrieval recall, not by the model's capacity to
 apply retrieved text. This is why the retrieval-gap finding (statutory provisions
 are hard to retrieve from layperson queries) is load-bearing: it caps the entire
 retrieval arm.
+
+## M4 claim-level factuality (sampled: 60 responses, 611 claims, single annotator)
+              claims  supported  not-supp  contradicted  precision
+  A1            225      136       43         46          60.4%
+  A3            189      122       18         49          64.6%
+  A5            197      159       13         25          80.7%
+
+CONTRADICTION RATE (claims the Act actively rules out):
+  A1  20.4%    A3  25.9%    A5  12.7%
+
+KEY FINDING. The base models are NOT merely miscited-but-correct. A3 contradicts
+the statute on a QUARTER of its claims; A1 on a fifth. The pilot's "right answer,
+wrong citation" pattern does not survive at scale - the substance is wrong, not
+just the citation. A creator following base-model advice receives law that
+contradicts the Act roughly one claim in four, stated fluently.
+
+RETRIEVAL improves substance, not only citation: contradiction 25.9% -> 12.7%,
+precision ~62% -> 80.7%. The retrieved provision constrains what the model
+asserts.
+
+Precision by category tracks retrieval recall (single_hop < divergence 
+summarization for A5), consistent with the H3 finding that A5's performance is
+governed by what is retrieved.
+
+CAVEATS.
+- Sampled (60 of 540 responses) and verified by a single, non-legally-qualified
+  annotator. Indicative, not definitive. No confidence intervals: a single-coder
+  sample cannot support them without a second coder on an overlap.
+- Automatic decomposition over-split some verbose answers (A1 225 claims vs A3
+  189), which may understate A1 precision relative to A3.
