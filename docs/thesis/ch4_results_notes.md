@@ -313,3 +313,35 @@ Reliable differences (interval excludes zero):
   retrieval and fine-tuning both raise accuracy over base (A1-A5, A1-A2)
   A5 beats A2 on accuracy (A2-A5: -21.4 [-32.4, -10.3])
 No reliable difference: A1 vs A3 on either metric (scale does not matter at n=180)
+
+## H3 verdict: the bottleneck is retrieval, not reasoning
+A5 accuracy conditioned on whether the gold provision was retrieved:
+
+  category         gold retrieved   acc|present   acc|absent
+  single_hop        12/35 (34%)       83%           4%
+  multi_hop         12/25 (48%)      100%           0%
+  divergence        28/45 (62%)      100%           0%
+  control            8/20 (40%)      100%           0%
+  summarization     13/20 (65%)       92%          14%
+
+WHEN GOLD IS RETRIEVED, A5 cites it correctly 83-100% of the time.
+WHEN IT IS NOT, 0-14%. This holds across every category.
+
+CONSEQUENCE. The apparent category differences in A5 accuracy are not differences
+in reasoning difficulty - they track retrieval success. Multi-hop scored higher
+than single-hop only because retrieval found the gold provision more often
+(48% vs 34%), not because the model reasoned better over chains.
+
+H3 PREDICTIONS:
+  - retrieval reduces fabrication         CONFIRMED (A3-A5 13.4 [5.8, 21.0])
+  - retrieval improves accuracy           CONFIRMED (A3-A5 -46.2 [-55.2, -37.2])
+  - retrieve-to-copy easier than          NOT SUPPORTED. The model applies a
+    retrieve-to-apply                     retrieved rule almost perfectly
+                                          regardless of hop depth. The limiting
+                                          factor is whether the provision is
+                                          retrieved at all.
+
+A5's accuracy ceiling is set by retrieval recall, not by the model's capacity to
+apply retrieved text. This is why the retrieval-gap finding (statutory provisions
+are hard to retrieve from layperson queries) is load-bearing: it caps the entire
+retrieval arm.
