@@ -33,7 +33,7 @@ def ci(items, b=B):
     return obs, reps[int(0.025 * len(reps))], reps[int(0.975 * len(reps))]
 
 arms = {}
-for arm in ["A1", "A3", "A5"]:
+for arm in ["A1", "A2", "A3", "A5"]:
     if Path(f"results/{arm}_m1_180.jsonl").exists():
         arms[arm] = load(arm)
 
@@ -50,7 +50,7 @@ for arm, items in arms.items():
 print("\npairwise differences in fabrication rate (percentage points)")
 print(f"{'comparison':16}{'diff':>9}{'95% CI':>20}{'':>6}")
 print("-" * 52)
-pairs = [("A1","A3"), ("A1","A5"), ("A3","A5")]
+pairs = [("A1","A2"), ("A1","A3"), ("A1","A5"), ("A2","A5"), ("A3","A5")]
 for a, b_ in pairs:
     if a not in arms or b_ not in arms: continue
     ia, ib = arms[a], arms[b_]

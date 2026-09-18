@@ -289,3 +289,27 @@ fine-tuning memorises what it is shown, retrieval generalises across the corpus.
 CAVEAT. 21 held-out items is small and the point estimates are imprecise. The
 DIFFERENCE interval excludes zero by a wide margin, so the direction is secure
 even where the magnitude is not.
+
+## H2 verdict (formal, with intervals)
+M1 fabrication  A1 - A2 = -2.5  [-13.2, +8.2]   includes zero: no reliable effect
+M2 accuracy     A1 - A2 = -23.4 [-31.7, -15.2]  excludes zero: large improvement
+
+Surface prediction of H2 (form improves, substance does not) is INVERTED:
+substance improved, form did not. But the held-out probe shows the M2 gain is
+memorisation (4.8% on unseen sections vs 32.5% on trained). Complete finding:
+  1. fine-tuning did not reduce fabrication
+  2. it raised citation accuracy sharply, but
+  3. only within the training distribution - memorisation, not generalisation.
+
+ANOMALY: A2 divergence fabrication 41.0% [25.9, 55.7], highest of any arm. Fine-
+tuning increased citations of BOTH kinds - correct and fabricated. It learned to
+emit citations, not to distinguish real from invented ones.
+
+## Full metric summary, four arms
+M1 fabrication:  A1 34.6  A2 37.1  A3 25.9  A5 12.5
+M2 accuracy:     A1  4.8  A2 28.3  A3  3.4  A5 49.7
+Reliable differences (interval excludes zero):
+  retrieval reduces fabrication (A1-A5, A2-A5, A3-A5)
+  retrieval and fine-tuning both raise accuracy over base (A1-A5, A1-A2)
+  A5 beats A2 on accuracy (A2-A5: -21.4 [-32.4, -10.3])
+No reliable difference: A1 vs A3 on either metric (scale does not matter at n=180)

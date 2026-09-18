@@ -26,7 +26,7 @@ def ci(items, b=B):
     reps = sorted(acc([items[random.randrange(n)] for _ in range(n)]) for _ in range(b))
     return obs, reps[int(0.025*b)], reps[int(0.975*b)]
 
-arms = {a: load(a) for a in ["A1","A3","A5"] if Path(f"results/{a}_m2_180.jsonl").exists()}
+arms = {a: load(a) for a in ["A1","A2","A3","A5"] if Path(f"results/{a}_m2_180.jsonl").exists()}
 
 print(f"M2 citation accuracy, percentile bootstrap over items, B={B}")
 print("Category E excluded (no governing provision); n = 145 per arm\n")
@@ -39,7 +39,7 @@ for a, items in arms.items():
 print("\npairwise differences (percentage points)")
 print(f"{'comparison':16}{'diff':>9}{'95% CI':>20}{'':>6}")
 print("-"*52)
-for x, y in [("A1","A3"), ("A1","A5"), ("A3","A5")]:
+for x, y in [("A1","A2"), ("A1","A3"), ("A1","A5"), ("A2","A5"), ("A3","A5")]:
     if x not in arms or y not in arms: continue
     ix, iy = arms[x], arms[y]
     d = acc(ix) - acc(iy)
