@@ -375,3 +375,31 @@ CAVEATS.
   sample cannot support them without a second coder on an overlap.
 - Automatic decomposition over-split some verbose answers (A1 225 claims vs A3
   189), which may understate A1 precision relative to A3.
+
+## ============================================================
+## CHAPTER 4 HEADLINE TABLE (all metrics, all arms, final)
+## ============================================================
+                          A1      A2      A3      A5
+M1 fabrication rate      34.6%   37.1%   25.9%   12.5%
+M2 citation accuracy      4.8%   28.3%    3.4%   49.7%   (n=145, E excluded)
+M3 displacement           6.7%    4.4%   11.1%    6.7%   (n=45)
+M4 precision (sample)     60.4%   -       64.6%   80.7%
+M4 contradiction rate     20.4%   -       25.9%   12.7%
+
+Reliable differences (95% bootstrap interval excludes zero):
+  M1: retrieval reduces fabrication (A5 beats A1, A2, A3)
+      scale does NOT matter (A1 vs A3 includes zero)
+      fine-tuning does NOT reduce fabrication (A1 vs A2 includes zero)
+  M2: retrieval and fine-tuning both raise accuracy over base
+      A5 beats A2 (retrieval beats fine-tuning)
+      scale does NOT matter (A1 vs A3 includes zero)
+
+Hypothesis verdicts:
+  H1 displacement: NOT the dominant failure. Models fabricate Nigerian-sounding
+     provisions rather than importing foreign law. Naming the jurisdiction in the
+     prompt halves what little displacement occurs (8.9% -> 15.6% without).
+  H2 fine-tuning: accuracy gain is MEMORISATION (32.5% trained vs 4.8% held-out);
+     fabrication unchanged. Installs facts, not understanding.
+  H3 retrieval: reduces fabrication and raises accuracy, both reliably. But the
+     bottleneck is RETRIEVAL not reasoning - A5 cites correctly 83-100% when the
+     gold provision is retrieved, 0-14% when not, regardless of hop depth.

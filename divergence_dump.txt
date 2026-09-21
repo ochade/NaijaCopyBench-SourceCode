@@ -1,0 +1,315 @@
+==============================================================================
+NCB-C-001
+Q: Under Nigerian law, my song was uploaded to a Lagos-based streaming platform without my permission. What must I actually put in the notice I send them?
+GOLD (Nigerian): it should be in writing and contain a signature, the alleged work infringed, location of the infringing material, contact information of the complainant, declaration of oath by the complainant that the copyright's owner did not authorize such act, statement that the information is accurate and the complainant is authorized to act on behalf of the owner whose right was infringed
+US: 17 USC 512(c)(3)(A): six elements - signature; identification of the work; identification of the material; contact information; a good-faith-belief statement (clause v); and a statement that the notice is accurate and, UNDER PENALTY OF PERJURY, that the sender is authorised (clause vi).
+UK: CDPA 1988 contains no notice-and-takedown or safe-harbour regime; UK intermediary liability limits derive from the Electronic Commerce (EC Directive) Regulations 2002, regs 17-19, which sit outside the Act.
+
+==============================================================================
+NCB-C-002
+Q: Under Nigerian law, when I send a takedown notice about my film, which part of what I say has to be sworn - my belief that the use is unauthorised, or my authority to act for the owner?
+GOLD (Nigerian): They are wrong. Although a take-down notice should be in writing, the law explicitly provides it can be transmitted electronically. so the delivery is valid and not void, so it should be acted upon by the Nigerian platform
+US: 17 USC 512(c)(3)(A): the PENALTY OF PERJURY attaches ONLY to the statement of AUTHORITY TO ACT (clause vi). The good-faith belief that the use is unauthorised (clause v) is a separate, UNSWORN statement.
+UK: CDPA 1988 contains no notice-and-takedown or safe-harbour regime; UK intermediary liability limits derive from the Electronic Commerce (EC Directive) Regulations 2002, regs 17-19, which sit outside the Act.
+
+==============================================================================
+NCB-C-003
+Q: Under Nigerian law, someone knowingly filed a false takedown claim against my YouTube channel and my video was pulled. Do I have any remedy against them?
+GOLD (Nigerian): yes. the person is liable in damages for injuries suffered due to the video pulled down
+US: 17 USC 512(f): knowing material misrepresentation gives damages INCLUDING COSTS AND ATTORNEYS' FEES to the alleged infringer, ANY copyright owner or licensee, OR THE SERVICE PROVIDER. Nigeria s.57 gives damages only to 'the person' injured by the provider's reliance - narrower class, no costs or fee
+UK: CDPA 1988 contains no notice-and-takedown or safe-harbour regime; UK intermediary liability limits derive from the Electronic Commerce (EC Directive) Regulations 2002, regs 17-19, which sit outside the Act.
+
+==============================================================================
+NCB-C-004
+Q: Under Nigerian law, a Nigerian platform has received my takedown notice about a pirated film. What steps must it take, and who must it tell?
+GOLD (Nigerian): the platform shall promptly inform the subsciber of the content of the infringement notice, take down the infringing content and notify the copyright afterwards
+US: 17 USC 512(c)(1)(C) requires expeditious removal on notice; 512(g)(2)(A) requires reasonable steps to notify the subscriber. No statutory ORDER of steps is prescribed, and no duty to notify the OWNER afterwards. Nigeria s.55(1) prescribes a sequence and requires notifying the owner.
+UK: CDPA 1988 contains no notice-and-takedown or safe-harbour regime; UK intermediary liability limits derive from the Electronic Commerce (EC Directive) Regulations 2002, regs 17-19, which sit outside the Act.
+
+==============================================================================
+NCB-C-005
+Q: Under Nigerian law, the person who uploaded my track sent the platform a counter-notice. How long do I have to reply before they can put it back up?
+GOLD (Nigerian): based on the Copyright Act, a person has 7 days to reply to a counter-notice before the supposed infringed content is put back up.
+US: 17 USC 512(g)(2)(B)-(C): provider tells the notifier it will replace the material in 10 business days, then replaces it not less than 10 nor more than 14 BUSINESS days after the counter notice, UNLESS the notifier has FILED A COURT ACTION to restrain the subscriber. Nigeria s.55(2)(b) uses SEVEN day
+UK: CDPA 1988 contains no notice-and-takedown or safe-harbour regime; UK intermediary liability limits derive from the Electronic Commerce (EC Directive) Regulations 2002, regs 17-19, which sit outside the Act.
+
+==============================================================================
+NCB-C-006
+Q: Under Nigerian law, a platform removed my pirated album but the same file was uploaded again a week later. Does the platform have any duty to stop that happening?
+GOLD (Nigerian): a service provider has to take steps to prevent content that has been taken down from being reuploaded and these steps must be carried out based on the standards laid down the Act. Also if after taking such steps, the content is reuploaded, the platform shall promptly remove it or disable access upon being aware, without further notice to the subsciber,
+US: 17 USC 512(m)(1) EXPRESSLY DISCLAIMS any monitoring duty: safe harbour is not conditioned on 'a service provider monitoring its service or affirmatively seeking facts indicating infringing activity'. NO stay-down obligation. Nigeria s.55(3) requires the OPPOSITE - effective steps to prevent reloadin
+UK: CDPA 1988 contains no notice-and-takedown or safe-harbour regime; UK intermediary liability limits derive from the Electronic Commerce (EC Directive) Regulations 2002, regs 17-19, which sit outside the Act.
+
+==============================================================================
+NCB-C-007
+Q: Under Nigerian law, I am unhappy with how a Nigerian platform handled my copyright complaint. Is going to court my only option?
+GOLD (Nigerian): Going to court is not the only option to settle any complaints relating to copyright. the person can also take the matter to the commission, who will act statutorily towatds the issue at hand.
+US: 17 USC 512 provides NO administrative determination route: 512(h) subpoenas issue from a district court clerk and 512(j) injunctions from a court. Nigeria s.55(4) permits referral to the Commission for determination.
+UK: CDPA 1988 contains no notice-and-takedown or safe-harbour regime; UK intermediary liability limits derive from the Electronic Commerce (EC Directive) Regulations 2002, regs 17-19, which sit outside the Act.
+
+==============================================================================
+NCB-C-008
+Q: Under Nigerian law, a Nigerian hosting company received my takedown notice three months ago and has done nothing. What is the company exposed to?
+GOLD (Nigerian): the company is exposed to breach of statutory duty and infringement of the content which is the subject matter of the notice
+US: 17 USC 512(c)(1): a non-complying provider simply LOSES THE SAFE HARBOUR and faces ordinary secondary-liability analysis. Nigeria s.55(6) deems non-compliance a BREACH OF STATUTORY DUTY and makes the provider liable for the infringement to the SAME EXTENT as the person who posted the content.
+UK: CDPA 1988 contains no notice-and-takedown or safe-harbour regime; UK intermediary liability limits derive from the Electronic Commerce (EC Directive) Regulations 2002, regs 17-19, which sit outside the Act.
+
+==============================================================================
+NCB-C-009
+Q: Under Nigerian law, a user keeps re-uploading my films to a Nigerian platform and I have reported it repeatedly. At what point must the platform suspend that account?
+GOLD (Nigerian): the platform suspends an account after a second notification of warning and no pending challenge by the owner of the account
+US: 17 USC 512(i)(1)(A) requires only a 'policy that provides for the termination in appropriate circumstances' of repeat infringers - NO specified number of notifications. Nigeria s.56(1)(b) requires suspension after a SECOND notification on the same account.
+UK: CDPA 1988 contains no notice-and-takedown or safe-harbour regime; UK intermediary liability limits derive from the Electronic Commerce (EC Directive) Regulations 2002, regs 17-19, which sit outside the Act.
+
+==============================================================================
+NCB-C-010
+Q: Under Nigerian law, my account on a Nigerian platform was suspended over copyright complaints I believe were about someone else. How long do I have to object, and who decides?
+GOLD (Nigerian): A person has 10 days from the date of warning to object. they are to send a signed counter-notice to the service provider and if it cant be resolved, refer the matter to National Copyright Commission.
+US: 17 USC 512(g)(3): a counter notification requires signature, identification of the removed material, a penalty-of-perjury statement of mistake or misidentification, contact details, AND consent to federal district court jurisdiction plus agreement to accept service of process. Nigeria s.56(2) sets a
+UK: CDPA 1988 contains no notice-and-takedown or safe-harbour regime; UK intermediary liability limits derive from the Electronic Commerce (EC Directive) Regulations 2002, regs 17-19, which sit outside the Act.
+
+==============================================================================
+NCB-C-011
+Q: Under Nigerian law, a Nigerian platform suspended a repeat infringer account. Is there a minimum period the suspension must run?
+GOLD (Nigerian): the minimum period for a suspension is at least 1month
+US: 17 USC 512(i)(1)(A) specifies NO minimum suspension period; termination 'in appropriate circumstances' only. Nigeria s.56(1)(b) sets a minimum of ONE MONTH.
+UK: CDPA 1988 contains no notice-and-takedown or safe-harbour regime; UK intermediary liability limits derive from the Electronic Commerce (EC Directive) Regulations 2002, regs 17-19, which sit outside the Act.
+
+==============================================================================
+NCB-C-012
+Q: Under Nigerian law, I run a Nigerian file-hosting service and users upload material I never review. What must I do to avoid being liable for infringing uploads?
+GOLD (Nigerian): quickly remove or disable access to the infringing content and compile with the procedure of suspension of accounts.
+US: 17 USC 512(c)(1): no actual knowledge, no awareness of facts making infringement apparent, no direct financial benefit where the provider can control the activity, expeditious removal on notice; plus 512(c)(2) designated agent and 512(i) repeat-infringer policy. Nigeria s.58 mirrors the knowledge an
+UK: CDPA 1988 contains no notice-and-takedown or safe-harbour regime; UK intermediary liability limits derive from the Electronic Commerce (EC Directive) Regulations 2002, regs 17-19, which sit outside the Act.
+
+==============================================================================
+NCB-C-013
+Q: Under Nigerian law, my Nigerian website only lists links to other sites, some of which turn out to host pirated films. Am I liable simply for linking?
+GOLD (Nigerian): yes. the person is liable for linking. the law states that a person shall not be liable for monetary reliefs if he does not have actual knowledge that the material or activity is infringing, or if upon obtaining such knowledge or awareness, acts expeditiously to remove or disable access to the material. in this case, the person is aware and doesnt carry out any act to stop the circulation of the i
+US: 17 USC 512(d) gives a SEPARATE safe harbour for information location tools - directory, index, reference, pointer, hypertext link - on substantially the 512(c) conditions. 512(d)(3) additionally requires the notice to identify THE REFERENCE OR LINK rather than the material. Nigeria s.59 is closely p
+UK: CDPA 1988 contains no notice-and-takedown or safe-harbour regime; UK intermediary liability limits derive from the Electronic Commerce (EC Directive) Regulations 2002, regs 17-19, which sit outside the Act.
+
+==============================================================================
+NCB-C-014
+Q: Under Nigerian law, I run a Nigerian social platform. Is there anything I must publish on my website before I can rely on the liability protections?
+GOLD (Nigerian): to rely fully on liability protections, service providers should designate an agent or address on their website to receive takedown notices  and not take an active role, intervene or participate in the making available of content
+US: 17 USC 512(c)(2): the agent must be designated BOTH on the provider's website AND by providing the information to the Copyright Office, which maintains a public directory and may charge a fee. Nigeria s.62(1)(b)(ii) requires only website designation - no central registry.
+UK: CDPA 1988 contains no notice-and-takedown or safe-harbour regime; UK intermediary liability limits derive from the Electronic Commerce (EC Directive) Regulations 2002, regs 17-19, which sit outside the Act.
+
+==============================================================================
+NCB-C-015
+Q: Under Nigerian law, a website is distributing pirated Nollywood films. Can it be blocked without anyone going to court first?
+GOLD (Nigerian): a pirated work can be blocked by the commission first, before going to court
+US: No administrative blocking power in 17 USC. 512(j) permits INJUNCTIONS only, granted by a COURT, constrained to the least burdensome comparably effective relief (512(j)(2)(D)) and available only after notice to the provider and an opportunity to appear (512(j)(3)).
+UK: CDPA 1988 s.97A(1): 'The High Court (in Scotland, the Court of Session) shall have power to grant an injunction against a service provider, where that service provider has actual knowledge of another person using their service to infringe copyright.' JUDICIAL, not administrative.
+
+==============================================================================
+NCB-C-016
+Q: Under Nigerian law, my band sampled a traditional Yoruba folk song on a track we are releasing commercially. Do we need anyone's permission?
+GOLD (Nigerian): for a lawful use of the Yoruba song, permission is required from the Commission or this will amount to infringement..
+US: No provision found in 17 USC on search for 'folklore', 'traditional', 'expressions of folklore'. US federal copyright has no sui generis folklore protection.
+UK: CDPA 1988 s.169 'Folklore, &c.: anonymous unpublished works' is NOT a sui generis folklore right. It creates a PRESUMPTION that the author of an unpublished work of unknown authorship qualified for copyright, and empowers designation by Order in Council of a FOREIGN BODY appointed under another coun
+
+==============================================================================
+NCB-C-017
+Q: Under Nigerian law, if permission is needed to use a Nigerian folk song commercially, who grants it - the community it came from, or some other body?
+GOLD (Nigerian): to use a folksong commercial, the law provides that the permission of the commission is needed.
+US: No provision found in 17 USC on search for 'folklore', 'traditional', 'expressions of folklore'. US federal copyright has no sui generis folklore protection.
+UK: CDPA 1988 s.169 'Folklore, &c.: anonymous unpublished works' is NOT a sui generis folklore right. It creates a PRESUMPTION that the author of an unpublished work of unknown authorship qualified for copyright, and empowers designation by Order in Council of a FOREIGN BODY appointed under another coun
+
+==============================================================================
+NCB-C-018
+Q: Under Nigerian law, does protection for traditional folk expressions ever expire, the way copyright in a book does?
+GOLD (Nigerian): the law does not state that protection for traditional folk expressions ever expires the way copyright in a book does
+US: No provision found in 17 USC on search for 'folklore', 'traditional', 'expressions of folklore'. US federal copyright has no sui generis folklore protection.
+UK: CDPA 1988 s.169 'Folklore, &c.: anonymous unpublished works' is NOT a sui generis folklore right. It creates a PRESUMPTION that the author of an unpublished work of unknown authorship qualified for copyright, and empowers designation by Order in Council of a FOREIGN BODY appointed under another coun
+
+==============================================================================
+NCB-C-019
+Q: Under Nigerian law, a lecturer at a Nigerian university used traditional folk riddles in a classroom lesson. Was permission required?
+GOLD (Nigerian): in this case, permission was not required since the use was for the purposes of education
+US: No provision found in 17 USC on search for 'folklore', 'traditional', 'expressions of folklore'. US federal copyright has no sui generis folklore protection.
+UK: CDPA 1988 s.169 'Folklore, &c.: anonymous unpublished works' is NOT a sui generis folklore right. It creates a PRESUMPTION that the author of an unpublished work of unknown authorship qualified for copyright, and empowers designation by Order in Council of a FOREIGN BODY appointed under another coun
+
+==============================================================================
+NCB-C-020
+Q: Under Nigerian law, a novelist took motifs from Igbo folk tales and wrote an original novel around them. Is that permitted?
+GOLD (Nigerian): the law provides that the borrowing of expressions of folklore for creating an original work of an author; provided that the extent of such utilisation is compatible with fair practice. so the novelist's action is permitted and not contrary to the provisions of the Act.
+US: No provision found in 17 USC on search for 'folklore', 'traditional', 'expressions of folklore'. US federal copyright has no sui generis folklore protection.
+UK: CDPA 1988 s.169 'Folklore, &c.: anonymous unpublished works' is NOT a sui generis folklore right. It creates a PRESUMPTION that the author of an unpublished work of unknown authorship qualified for copyright, and empowers designation by Order in Council of a FOREIGN BODY appointed under another coun
+
+==============================================================================
+NCB-C-021
+Q: Under Nigerian law, I am publishing a book that quotes a traditional folk song. Is there anything I am required to state about its origin?
+GOLD (Nigerian): for a work quoting folklore to be valid, the law provides that the community or place where the folklore expression is derived must be stated.
+US: No provision found in 17 USC on search for 'folklore', 'traditional', 'expressions of folklore'. US federal copyright has no sui generis folklore protection.
+UK: CDPA 1988 s.169 'Folklore, &c.: anonymous unpublished works' is NOT a sui generis folklore right. It creates a PRESUMPTION that the author of an unpublished work of unknown authorship qualified for copyright, and empowers designation by Order in Council of a FOREIGN BODY appointed under another coun
+
+==============================================================================
+NCB-C-022
+Q: Under Nigerian law, are traditional Nigerian textile patterns and wood carvings covered by any protection?
+GOLD (Nigerian): it is explicitedly entrenched in the Act that traditional Nigerian textile patterns and wood carvings are covered by copyright protection
+US: No provision found in 17 USC on search for 'folklore', 'traditional', 'expressions of folklore'. US federal copyright has no sui generis folklore protection.
+UK: CDPA 1988 s.169 'Folklore, &c.: anonymous unpublished works' is NOT a sui generis folklore right. It creates a PRESUMPTION that the author of an unpublished work of unknown authorship qualified for copyright, and empowers designation by Order in Council of a FOREIGN BODY appointed under another coun
+
+==============================================================================
+NCB-C-023
+Q: Under Nigerian law, a Nollywood production filmed a traditional folk dance for a commercial feature without asking anyone. Is folk dance covered?
+GOLD (Nigerian): Of course it is. the law states that for the purpose of the Act, folklore means a group-oriented and tradition-based creation of groups or individualsreflecting the expectation of the community as an adequate expression of its cultural and social identity, its standards and values as transmitted orally, by imitation or by other means
+including folklore, folk poetry, and folk riddles.
+US: No provision found in 17 USC on search for 'folklore', 'traditional', 'expressions of folklore'. US federal copyright has no sui generis folklore protection.
+UK: CDPA 1988 s.169 'Folklore, &c.: anonymous unpublished works' is NOT a sui generis folklore right. It creates a PRESUMPTION that the author of an unpublished work of unknown authorship qualified for copyright, and empowers designation by Order in Council of a FOREIGN BODY appointed under another coun
+
+==============================================================================
+NCB-C-024
+Q: Under Nigerian law, I import blank discs and duplicating equipment for my Lagos business. Is any levy payable on them?
+GOLD (Nigerian): there is a levy on any material capable of infringing copyright in a work, so the blank discs and duplicating equipment for the Lagos business, falls under the confines of thid law and so, are payable.
+US: 17 USC ch.10 (Audio Home Recording Act) imposes royalties ONLY on 'digital audio recording devices/media', defined at 1001(3)-(4) as devices whose digital recording function is designed or marketed PRIMARILY for making digital audio copies for private use. EXPRESSLY EXCLUDES professional models, dic
+UK: No provision found in CDPA 1988 on search for 'levy', 'blank media' or 'private copying'. The UK has no private copying levy.
+
+==============================================================================
+NCB-C-025
+Q: Under Nigerian law, who sets the amount of the copyright levy, and by what instrument?
+GOLD (Nigerian): the amount of the copyright is set by the Minister by a order
+US: 17 USC ch.10 (Audio Home Recording Act) imposes royalties ONLY on 'digital audio recording devices/media', defined at 1001(3)-(4) as devices whose digital recording function is designed or marketed PRIMARILY for making digital audio copies for private use. EXPRESSLY EXCLUDES professional models, dic
+UK: No provision found in CDPA 1988 on search for 'levy', 'blank media' or 'private copying'. The UK has no private copying levy.
+
+==============================================================================
+NCB-C-026
+Q: Under Nigerian law, once the copyright levy is collected, where does the money go and who can receive it?
+GOLD (Nigerian): it is paid into the fund of the Commission and the Commission distributes the funds to approved CMOs or other represenatitives of right owners.
+US: 17 USC ch.10 (Audio Home Recording Act) imposes royalties ONLY on 'digital audio recording devices/media', defined at 1001(3)-(4) as devices whose digital recording function is designed or marketed PRIMARILY for making digital audio copies for private use. EXPRESSLY EXCLUDES professional models, dic
+UK: No provision found in CDPA 1988 on search for 'levy', 'blank media' or 'private copying'. The UK has no private copying levy.
+
+==============================================================================
+NCB-C-027
+Q: Under Nigerian law, does the copyright levy reach digital and electronic systems, or only physical items like blank discs?
+GOLD (Nigerian): copyright levy also covers digital and electronic systems, the Act provides that material includes any object, equipment, machine, contrivances or any other device, including electronic or digital systems, used or capable of being used to infringe copyright in a work.
+US: 17 USC ch.10 (Audio Home Recording Act) imposes royalties ONLY on 'digital audio recording devices/media', defined at 1001(3)-(4) as devices whose digital recording function is designed or marketed PRIMARILY for making digital audio copies for private use. EXPRESSLY EXCLUDES professional models, dic
+UK: No provision found in CDPA 1988 on search for 'levy', 'blank media' or 'private copying'. The UK has no private copying levy.
+
+==============================================================================
+NCB-C-028
+Q: Under Nigerian law, a teacher at a Lagos secondary school used the school photocopier to copy textbook pages for her class. Was that permitted?
+GOLD (Nigerian): it is a general rule that the reprographic copying of passages from published literary or musical works by or on behalf of an educational establishment for the purposes of instruction shall not infringe the copyright in the work. so, the teacher's act doesnt violate the  Act
+US: 17 USC 107 EXPRESSLY lists 'teaching (including multiple copies for classroom use)' as a fair use purpose; there is NO categorical bar on reprographic copying. Nigeria s.21(1) excludes exactly that method.
+UK: CDPA s.36(1) permits copying extracts by educational establishments for non-commercial instruction, including reprographic copying, subject to the 5% cap.
+
+==============================================================================
+NCB-C-029
+Q: Under Nigerian law, a lecturer wrote out a passage from a published poem on the whiteboard while teaching. Did that infringe?
+GOLD (Nigerian): the Act states that Copyright in a literary, musical or artistic work is not infringed by its being copied in the course of instruction or of preparation for instruction, provided the copying is done by a person giving or receiving instruction and is not by means of a reprographic process. since the lecturer act of copying the passages was not by means of reprographic process, it is not infringeme
+US: 17 USC 107 covers teaching generally under the four factors; no distinction by copying METHOD. Nigeria s.21(1) permits instruction copying but only if NOT by a reprographic process - so manual copying is permitted where photocopying is not.
+UK: CDPA s.36 draws no manual/reprographic distinction.
+
+==============================================================================
+NCB-C-030
+Q: Under Nigerian law, a private tutorial centre in Abuja that operates for profit copied part of a film to use in a lesson. Can it rely on the teaching exception?
+GOLD (Nigerian): the private tutorial center cannot rely on this exception, since this is a profit-making institution
+US: 17 USC 107(1) treats 'nonprofit educational purposes' as ONE FACTOR in an open balance, not a threshold. Nigeria s.21(2) restricts the audiovisual/sound-recording exception to NON-PROFIT educational institutions - a bar, not a factor.
+UK: CDPA s.36(1)(a) requires a NON-COMMERCIAL purpose - closer to Nigeria than the US is.
+
+==============================================================================
+NCB-C-031
+Q: Under Nigerian law, an examiner reproduced several lines of a published poem inside an examination paper. Was the poet's permission needed?
+GOLD (Nigerian): the poet permission is not needed, as the law says that Copyright in a work is not infringed by anything done for the purposes of an examination by way of setting, communicating or answering questions
+US: 17 USC 107 has NO dedicated examination provision; examination use falls to the general factors. Nigeria s.21(3) gives an express exception for setting, communicating or answering examination questions.
+UK: CDPA s.32 provides an express examination exception - convergent with Nigeria.
+
+==============================================================================
+NCB-C-032
+Q: Under Nigerian law, a Nigerian polytechnic recorded a television documentary off air to show in class. Was that allowed?
+GOLD (Nigerian): recording by an establishment for educational purposes is allowed and is not against the law. the recording of a broadcast or cable programme or a copy of such a recording by or on behalf of an educational establishment for educational purposes of that establishment shall not infringe the copyright in the broadcast or cable programme or in any work included in it.
+US: 17 USC 110(1)-(2) permits performance/display in face-to-face teaching and certain transmissions, but there is no general off-air RECORDING exception; recording is assessed under 107. Nigeria s.22(1) gives an express off-air recording exception for educational establishments.
+UK: CDPA s.35 permits recording of broadcasts by educational establishments - convergent with Nigeria.
+
+==============================================================================
+NCB-C-033
+Q: Under Nigerian law, a Nigerian school records television programmes for teaching. A licensing body now offers a scheme covering exactly that. Does the school still have a free hand?
+GOLD (Nigerian): the general rule does not apply where there is a licensing scheme for these purposes, so the school doesnt have free-hand
+US: No licence-scheme override in 17 USC; the availability of a licence is at most relevant to the fourth fair use factor. Nigeria s.22(2) DISAPPLIES the exception entirely where a licensing scheme exists.
+UK: CDPA s.35(4) likewise disapplies the exception where a certified licensing scheme is available - CONVERGENT WITH UK.
+
+==============================================================================
+NCB-C-034
+Q: Under Nigerian law, a Nigerian university wants to photocopy from a published textbook for teaching. How much may it copy, and how often?
+GOLD (Nigerian): A person can only copynot more than 5 percent of a work within a period of 3 months
+US: 17 USC 107(3) makes 'amount and substantiality' an open-ended factor with NO statutory percentage or time window.
+UK: CDPA s.36(5): not more than 5% of a work in any period of TWELVE MONTHS. Nigeria s.23(2) uses the SAME 5% but a THREE-MONTH window - divergence is in the WINDOW, not the proportion.
+
+==============================================================================
+NCB-C-035
+Q: Under Nigerian law, a publisher's licence agreement tells our Nigerian college we may copy no more than two per cent of any book. Is that term enforceable against us?
+GOLD (Nigerian): the term is not enforceable. since its 2percent which is less than the general rule of 5percent, it is ineffective
+US: No 17 USC provision voids contractual terms restricting copying below a statutory allowance; licence terms generally govern.
+UK: CDPA s.36(7) is NEAR-IDENTICAL to Nigeria s.23(4): licence terms purporting to restrict the copyable proportion below the statutory allowance are of no effect. CONVERGENT WITH UK - divergent from the US only.
+
+==============================================================================
+NCB-C-036
+Q: Under Nigerian law, our Nigerian university already pays an annual licence fee to a copyright body for photocopying. Does that change what we may copy without permission?
+GOLD (Nigerian): Any term of a licence which purports to restrict the proportion of work, which may be copied to less than that permitted under this section shall
+US: No licence-scheme override in 17 USC 107.
+UK: CDPA s.36(6) states the same rule as Nigeria s.23(3): the exception does not apply where licences are available and the establishment knew or ought to have known. CONVERGENT WITH UK.
+
+==============================================================================
+NCB-C-037
+Q: Under Nigerian law, a student at a Lagos university sold me photocopied course material his department had produced for teaching. Is the copy I bought a lawful one?
+GOLD (Nigerian): the copy brought is not the lawful copy an infringed copy, since the photocopied course material was dealt with by way of sale.
+US: 17 USC 109 first-sale doctrine permits resale of a LAWFULLY MADE copy; 17 USC 108(f)(2) preserves user liability where use exceeds fair use. There is no provision converting a permitted copy into an infringing one on resale.
+UK: CDPA s.36(8): a copy made under the education exception and subsequently dealt with IS TREATED AS AN INFRINGING COPY. CONVERGENT WITH UK, divergent from the US.
+
+==============================================================================
+NCB-C-038
+Q: Under Nigerian law, someone gave false information on a request form to obtain a copy of a work from a Nigerian library. Who bears the liability?
+GOLD (Nigerian): be of no effect.
+US: 17 USC 108(d)-(e) require the library to display a copyright warning, but liability for a false declaration is not addressed in 17 USC. Nigeria s.24(2) makes the REQUESTER liable as if he had made the copy himself.
+UK: CDPA s.42A(4)-(5) makes a person supplying a false declaration liable as if he had made the copy - CONVERGENT WITH UK.
+
+==============================================================================
+NCB-C-039
+Q: Under Nigerian law, a Nigerian museum wants to digitise its collection purely for preservation and back-up. Must it clear that with rightsholders first?
+GOLD (Nigerian): the Nigerian museum mustnt clear it out with rightsholders first, as the law gives musuems the right to make copies of work in its collection for backup and preservation for non-commercial purposes
+US: 17 USC 108(b) permits preservation copying of UNPUBLISHED works only, capped at THREE copies, with digital copies not to be made available outside the premises; 108(c) covers published works only for REPLACEMENT of damaged, lost or obsolete items. Nigeria s.25(1)(b) permits back-up and preservation 
+UK: CDPA s.42 permits replacement copies for libraries and archives - narrower than a general preservation right.
+
+==============================================================================
+NCB-C-040
+Q: Under Nigerian law, a Nigerian library has tried hard but cannot trace the owner of an out-of-print book it holds. May it make a copy anyway?
+GOLD (Nigerian): the nigerian library can make a copy, as long as the consent of the owner of the copyright cannot be obtained
+US: 17 USC 108(e) permits copying an entire work where a copy CANNOT BE OBTAINED AT A FAIR PRICE after reasonable investigation - an AVAILABILITY trigger, not an untraceable-OWNER trigger; the copy becomes the user's property and is limited to private study, scholarship or research. NARROW ANALOGUE, not
+UK: CDPA s.44B and s.76A provide permitted uses of ORPHAN WORKS and s.116A empowers orphan-works licensing regulations - closer to Nigeria s.25(1)(e) than the US is.
+
+==============================================================================
+NCB-C-041
+Q: Under Nigerian law, a Nigerian university library has a volume with pages missing. Can it obtain the missing part from another institution's copy?
+GOLD (Nigerian): the Nigerian university can obtain the missing part from another institution's copy, as libraries have the right to make or procure a copy of any missing part of a work in its collection from another institution for non-commercial purposes.
+US: 17 USC 108(c) permits replacement of a damaged or deteriorating copy, capped at three copies, only after determining an unused replacement cannot be obtained at a fair price. Nigeria s.25(1)(c) permits obtaining a missing PART from another institution with no such precondition.
+UK: CDPA s.42 permits replacement copies for libraries and archives.
+
+==============================================================================
+NCB-C-042
+Q: Under Nigerian law, a Nigerian archive made preservation copies of works in its collection. May it lend those copies to users?
+GOLD (Nigerian): a Nigerian archive can lend preservation copies of works in its collection to users, for the law allows archives make to and distribute copies of works protected under the Copyright Act as part of their ordinary activities, provides its for non-commercial purposes.
+US: 17 USC 108(b)(2) and (c)(2) EXPRESSLY forbid making digital copies available outside the library premises. Nigeria s.25(2)(a) permits copies made under the exception to be LENT TO USERS.
+UK: Library lending is governed by the public lending right and licensing rather than a general exception.
+
+==============================================================================
+NCB-C-043
+Q: Under Nigerian law, a service provider acted in good faith when taking content down after a notice. Can the uploader sue it for the removal?
+GOLD (Nigerian): An uploader cannot bring a legal action against the service-provider for anything done in good faith, as the service-provider shall not be found liable
+US: 17 USC 512(g)(1): no liability for good-faith disabling or removal, REGARDLESS of whether the material is ultimately found infringing - but 512(g)(2) makes that protection CONDITIONAL on notifying the subscriber and honouring the counter-notice procedure. Nigeria s.55(5) states the good-faith immuni
+UK: CDPA 1988 contains no notice-and-takedown or safe-harbour regime; UK intermediary liability limits derive from the Electronic Commerce (EC Directive) Regulations 2002, regs 17-19, which sit outside the Act.
+
+==============================================================================
+NCB-C-044
+Q: Under Nigerian law, I want the platform to tell me who uploaded my pirated film so I can sue them. Can I simply ask the platform for the name?
+GOLD (Nigerian): a person cannot ask a platform for the name of a person violating his copyright rights in order to sue them. instead they are to apply to the court for an order to a service provider to identify the alleged infringer
+US: 17 USC 512(h): the owner requests the CLERK OF A DISTRICT COURT to issue a subpoena, filing a copy of the notification, a proposed subpoena and a sworn declaration; the clerk issues it if the papers are in order. Nigeria s.60 requires an APPLICATION TO THE COURT for an order, not a clerk-issued subp
+UK: Disclosure of an alleged infringer's identity requires a Norwich Pharmacal order from the court; no CDPA provision.
+
+==============================================================================
+NCB-C-045
+Q: Under Nigerian law, someone distorted a traditional folk song in a way the originating community finds deeply offensive, and sold the recording. Is that an offence?
+GOLD (Nigerian): A person who intentionally distorts an expression offolklore in amanner prejudicial to the honour, dignity or cultural interests of the community in which it originates, commits an offence under the Act. so the person distorting and selling the traditional folk song without permission has committed a grave offence and is liable for punishment under the Law.
+US: No provision found in 17 USC on search for 'folklore', 'traditional', 'expressions of folklore'. US federal copyright has no sui generis folklore protection.
+UK: CDPA 1988 s.169 'Folklore, &c.: anonymous unpublished works' is NOT a sui generis folklore right. It creates a PRESUMPTION that the author of an unpublished work of unknown authorship qualified for copyright, and empowers designation by Order in Council of a FOREIGN BODY appointed under another coun
