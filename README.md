@@ -22,7 +22,7 @@ Methodology & System Architecture
 
 The benchmark consists of an end-to-end statutory extraction, query annotation, multi-arm execution, and bootstrap-verified evaluation workflow.
 
-![Methodology Workflow](figures/Screenshot%202026-09-20%191636.png)
+![Methodology Workflow](figures/Screenshot%202026-09-20%20191636.png)
 
 
 Figure 1: End-to-end Methodology Workflow across Corpus Preprocessing, Dual-Annotator Benchmark Construction, and Experimental Model Execution Arms.
@@ -44,7 +44,7 @@ Arm A5 (Dense RAG): gpt-4o-mini-2024-07-18 supplied with k retrieved chunks via 
 
 
 Evaluation Metrics (M1–M4)
-![Evaluation Workflow](figures/Screenshot%202026-09-20%193226.png)
+![Evaluation Workflow](figures/Screenshot%202026-09-20%20193226.png)
 
 Figure 3: Multi-Metric Evaluation Architecture mapping model outputs against statutory ground-truth oracles to produce bootstrapped confidence intervals.
 
