@@ -7,7 +7,6 @@ Methodology & System Architecture
 Statutory Corpus & Topological Graph
 Experimental Arms
 Evaluation Metrics (M1–M4)
-Repository Structure
 Installation & Environment Setup
 Reproducing Evaluations & Bootstrapping
 Citation
@@ -57,6 +56,8 @@ M3 Jurisdictional Displacement Rate: The rate at which foreign legal quantities 
 M4 Propositional Factuality: Sampled fine-grained claim decomposition (N=611 assertions) scoring claims as Supported (S), Not Supported (N), or Contradicted (C) by the Act.
 
 Repository Structure
+
+```text
 naijacopybench/
 ├── data/
 │   ├── act/
@@ -100,6 +101,7 @@ naijacopybench/
 ├── score_m3_markers.py                    # Complete M3 displacement runner
 ├── score_m4.py                            # Complete M4 propositional factuality runner
 └── requirements.txt                       # Python dependencies
+```
 
 Installation & Environment Setup
 Prerequisites
