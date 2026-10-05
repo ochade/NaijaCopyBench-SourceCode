@@ -1,15 +1,18 @@
 NaijaCopyBench: An Empirical Benchmark for Statutory Compliance, Cross-Reference Topology, and Jurisdictional Displacement in Legal AI
 NaijaCopyBench is an evaluation benchmark and auditing framework built to test whether Large Language Models (LLMs) adhere to sovereign domestic legislation or suffer from statutory hallucination and jurisdictional displacement. Grounded in the Nigerian Copyright Act 2022 (NCA 2022), the benchmark departs from unstructured "LLM-as-a-judge" heuristics by framing statutory verification as a decidable graph traversal problem, evaluating zero-shot baseline inference, parameter-efficient fine-tuning (PEFT/QLoRA), and retrieval-augmented generation (RAG) against a deterministic statutory oracle.
 
+```text
 Table of Contents
 Core Empirical Discoveries
 Methodology & System Architecture
 Statutory Corpus & Topological Graph
 Experimental Arms
 Evaluation Metrics (M1–M4)
+Repository Structure
 Installation & Environment Setup
 Reproducing Evaluations & Bootstrapping
 Citation
+```
 
 Core Empirical Discoveries
 The Divergence Breakdown: Base language models (both small-scale open weights and frontier closed APIs) exhibit a near-complete breakdown on provisions where Nigerian law departs from Western defaults. On 45 divergence queries, both zero-shot models scored 0.0% citation accuracy.
